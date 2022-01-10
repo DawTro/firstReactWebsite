@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: #4e4e4e;
+  color: white;
+  padding: 0 50px;
+  margin: 0 auto;
+  width: auto;
+}
+.fab {
+  padding-right: 5px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .nameoffirm {
+    text-align: center;
+  }
+  .icon {
+    padding-bottom: 10px;
+  }
+}

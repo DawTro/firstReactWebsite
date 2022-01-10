@@ -1,0 +1,66 @@
+.boxwithdot {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  color: #000000;
+  aspect-ratio: 1/1;
+  width: 30%;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: center;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transition-property: all;
+}
+.boxwithdot::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: #e07a64;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+.boxwithdot:hover {
+  transform: scale(1.05);
+}
+.smallbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  color: #000000;
+  aspect-ratio: 1/1;
+  width: 30%;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transition-property: all;
+}
+.smallbox:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 768px) {
+  .boxwithdot {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .boxwithdot:hover {
+    transform: scale(1);
+  }
+  .smallbox {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .smallbox:hover {
+    transform: scale(1);
+  }
+}

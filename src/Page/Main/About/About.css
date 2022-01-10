@@ -1,0 +1,32 @@
+/* .about {
+  display: flex;
+  padding: 0 40px;
+} */
+.about-expert {
+  margin-bottom: 20px;
+}
+.about-expert:nth-of-type(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.spec {
+  display: flex;
+  width: 100%;
+  height: auto;
+  font-size: 33px;
+  margin: 0 auto;
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .spec {
+    display: inline;
+    text-align: center;
+    font-size: 30px;
+  }
+  .expert {
+    width: auto;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+}

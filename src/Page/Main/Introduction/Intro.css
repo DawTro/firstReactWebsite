@@ -1,0 +1,64 @@
+.background {
+  display: flex;
+  align-items: center;
+  background-image: url("../Introduction/background.jpg");
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+  padding: 0 40px;
+}
+.bgsmall {
+  display: block;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+  margin: 0;
+  color: white;
+}
+.big {
+  margin-bottom: 60px;
+  font-size: 36px;
+  width: auto;
+  height: auto;
+}
+.midium {
+  font-size: 20px;
+  font-weight: 700;
+  width: auto;
+  height: auto;
+}
+.small {
+  width: 164px;
+  height: 40.74px;
+  margin: 60px 0;
+  width: auto;
+  height: auto;
+}
+.but {
+  align-items: center;
+  font-family: roboto;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px 50px;
+  color: white;
+  border: 3px solid #ffffff;
+  background: transparent;
+  cursor: pointer;
+}
+.but:hover {
+  background-color: white;
+  color: #000000;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+@media screen and (max-width: 768px) {
+  .background {
+    padding: 0 20px;
+  }
+  .big {
+    font-size: 26px;
+  }
+}
